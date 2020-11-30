@@ -98,6 +98,7 @@ export class PaisesComponent implements OnInit {
     //hacemos una copia de los datos del formulario, para modificar la fecha y luego enviarlo al servidor
     const itemCopy = { ...this.FormReg.value };
     console.log("itemCopy",itemCopy);
+    
 
     //convertir fecha de string dd/MM/yyyy a ISO para que la entienda webapi
     var arrFecha = itemCopy.FechaCenso.substr(0, 10).split("/");
